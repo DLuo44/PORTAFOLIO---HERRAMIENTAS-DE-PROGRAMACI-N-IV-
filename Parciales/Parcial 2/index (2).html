@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHINOS CAFÉ S.A. - Servidor de Distribución</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e1b29 0%, #0f0c1b 100%);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        .circle-bg {
+            position: absolute;
+            background: linear-gradient(135deg, #ff9f43, #ff6b6b);
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.15;
+            z-index: 1;
+        }
+        .circle-1 { width: 400px; height: 400px; top: -10%; left: -10%; }
+        .circle-2 { width: 350px; height: 350px; bottom: -5%; right: -5%; }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 50px 40px;
+            border-radius: 24px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 480px;
+            width: 90%;
+            text-align: center;
+            z-index: 2;
+            position: relative;
+        }
+        .brand-logo {
+            font-size: 4rem;
+            margin-bottom: 15px;
+            display: inline-block;
+            filter: drop-shadow(0 0 10px rgba(255, 159, 67, 0.5));
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #ff9f43;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            font-size: 1rem;
+            color: #a4b0be;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+        .btn-download {
+            background: linear-gradient(90deg, #ff9f43, #ff6b6b);
+            color: #ffffff;
+            padding: 16px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            display: inline-block;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+        .btn-download:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.6);
+            letter-spacing: 0.5px;
+        }
+        .footer-info {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #747d8c;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 20px;
+        }
+        .badge {
+            background: rgba(255, 159, 67, 0.1);
+            color: #ff9f43;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle-bg circle-1"></div>
+    <div class="circle-bg circle-2"></div>
+    <div class="card">
+        <div class="brand-logo">🍕</div>
+        <h1>CHINOS CAFÉ S.A.</h1>
+        <p class="subtitle">Servidor de Distribución Móvil Oficial. Descarga nuestro prototipo de producción Android para la gestión automatizada y réplica de combos de pizza en la Provincia de Chiriquí.</p>
+        <a href="CHINOSCAFE.apk" class="btn-download" download="CHINOSCAFE.apk">Descargar APK Oficial</a>
+        <div class="footer-info">
+            <p>Infraestructura de Datos y Despliegue v1.0</p>
+            <span class="badge">Servidor Seguro Nginx</span>
+        </div>
+    </div>
+</body>
+</html>
